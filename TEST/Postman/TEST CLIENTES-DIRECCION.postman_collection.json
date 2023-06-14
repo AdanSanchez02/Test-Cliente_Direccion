@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "4a923807-6580-4f39-b6c5-87386dd624f7",
+		"name": "TEST CLIENTES-DIRECCION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27691311"
+	},
+	"item": [
+		{
+			"name": "Listar Direcciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/DireccionWS/listar"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/ClienteWS/listar"
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar Direccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"calle\": \"ARENAS\",\r\n        \"num_int\": 2,\r\n        \"num_ext\": 10,\r\n        \"cp\": 74120\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/DireccionWS/guardar"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Direccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"calle\": \"ARENAS\",\r\n        \"num_int\": 2,\r\n        \"num_ext\": 10,\r\n        \"cp\": 74120\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/DireccionWS/editar"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Direccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/DireccionWS/buscar"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Direccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/DireccionWS/eliminar"
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 21,\r\n    \"nombres\": \"JUAN\",\r\n    \"app\": \"ORPEZA\",\r\n    \"apm\": \"RAMIREZ\",\r\n    \"num_cel\": 2225986325,\r\n    \"correo\": \"juanOro@gmail.com\",\r\n    \"status\": 0,\r\n    \"direccion\": {\r\n        \"id\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/ClienteWS/guardar"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 18,\r\n    \"nombres\": \"JUAN\",\r\n    \"app\": \"ORPEZA\",\r\n    \"apm\": \"FLORES\",\r\n    \"num_cel\": 2225986325,\r\n    \"correo\": \"juanOro@gmail.com\",\r\n    \"status\": 0,\r\n    \"direccion\": {\r\n        \"id\": 4\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/ClienteWS/guardar"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/ClienteWS/buscar"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/ClienteWS/eliminar"
+			},
+			"response": []
+		}
+	]
+}
